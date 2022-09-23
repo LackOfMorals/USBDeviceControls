@@ -16,11 +16,11 @@ The document is called usb_serial.json and the PowerShell expects it to be locat
 
 To install on a windows computer
 
-*Create this directory structure  C:\programdata\usbcontrol\ 
-*Copy CheckIfApprovedUSB.ps1 and CreateTaskScheduleUSBControl.ps1 into usbcontrol 
-*Create and save the usb_serial.json file using the structure described above
-*Run CreateTaskScheduleUSBControl.ps1 as a local admin.  This sets up a service that launchs powershell.exe using the CheckIfApprovedUSB.ps1  script.  
-*USB storage allow / deny is logged in the Windows event log under 'CheckUSB'
+* Create this directory structure  C:\programdata\usbcontrol
+* Copy CheckIfApprovedUSB.ps1 and CreateTaskScheduleUSBControl.ps1 into usbcontrol 
+* Create and save the usb_serial.json file using the structure described above
+* Run CreateTaskScheduleUSBControl.ps1 as a local admin.  This sets up a service that launchs powershell.exe using the CheckIfApprovedUSB.ps1  script.  
+* USB storage allow / deny is logged in the Windows event log under 'CheckUSB'
 
 This is not being actively developed but might be of use for someone out there. 
 
